@@ -1,0 +1,29 @@
+mat-card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+
+    p {
+        font-weight: bold;
+        font-size: 55px;
+    }
+}
+
+.requests-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.requests-container-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
