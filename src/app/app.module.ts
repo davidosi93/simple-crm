@@ -30,7 +30,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DialogEditAddressComponent } from './dialog-edit-address/dialog-edit-address.component';
 import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     DialogEditAddressComponent,
     DialogEditUserComponent,
     BarChartComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +65,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     MatCardModule,
     MatMenuModule,
     ReactiveFormsModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),

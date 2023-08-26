@@ -1,3 +1,7 @@
+<button mat-icon-button (click)="goBackToUserList()">
+    <mat-icon>arrow_back</mat-icon>
+</button>
+
 <mat-card class="user-detail-header">
     <button mat-icon-button class="pin-right-upper-corner" [matMenuTriggerFor]="userMenu">
         <mat-icon>more_vert</mat-icon>
@@ -12,7 +16,7 @@
     </div>
 </mat-card>
 
-<mat-card class="mt-32 adress">
+<mat-card class="mt-32 adress pb-16">
     <button mat-icon-button class="pin-right-upper-corner" [matMenuTriggerFor]="addressMenu">
         <mat-icon>more_vert</mat-icon>
     </button>
@@ -27,4 +31,7 @@
         {{ user.street }} <br>
         {{ user.zipCode }} {{ user.city }}
     </mat-card-content>
+    <button mat-icon-button (click)="deleteUser()" class="pin-right-bottom-corner" matTooltip="Delete user"
+    [matTooltipPosition]="position.value!"><mat-icon
+            color="warn">delete</mat-icon></button>
 </mat-card>
